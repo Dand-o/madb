@@ -9,7 +9,7 @@ body {
     height: 100%;
 
 }
-
+/* Section one on index.html */
 .section1 {
     background-image: url("images/1.png");
     background-size: cover;
@@ -26,9 +26,11 @@ body {
      font-family: "Lexend", sans-serif;
      font-weight: bold;
      font-style: normal;
-     font-size: 6em;
-     top: 100px;
+     font-size: 5em;
+     top: 40px;
      left: 150px;
+     margin-left: 30%;
+     margin-right: 20%;
  }
 
  .body-text1 {
@@ -36,11 +38,14 @@ body {
      font-family: "Lexend", sans-serif;
      font-weight: normal;
      font-style: normal;
-     font-size: 2em;
-     top: 130px;
-     right: 130px;
-     margin-left: 30%;
+     font-size: 115%;
+     top: 50px;
+     left: 115px;
+     margin-left: 40%;
+     margin-right: 30%;
  }
+
+/* Section 2 on index.html */
 .section2 {
     background-image: url("images/2.png");
     background-size: cover;
@@ -59,30 +64,7 @@ body {
      font-style: normal;
      font-size: 6em;
      top: 100px;
-     left: 150px;
- }
 
- .body-text2 {
-     position: relative;
-     font-family: "Lexend", sans-serif;
-     font-weight: normal;
-     font-style: normal;
-     font-size: 2em;
-     top: 130px;
-     right: 130px;
-     margin-left: 30%;
- }
-
- .header-text3 {
-     position: relative;
-     color: #5d5955;
-     font-family: "Lexend", sans-serif;
-     font-weight: bold;
-     font-style: normal;
-     font-size: 6em;
-     top: 10%;
-     right: 30%;
-     left: 20%;
  }
 
   .body-text2 {
@@ -92,21 +74,20 @@ body {
       font-style: normal;
       font-size: 2em;
       top: 25%;
-      right: 26%;
       margin-left: 35%;
+      margin-right: 35%;
   }
-
-.section3 {
-    background-image: url("images/3.png");
-    background-size: cover;
-    min-height: 1080px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    position: relative;
-    text-align: center;
-}
-
+/* Section 3 on index.html */
+ .section3 {
+     background-image: url("images/3.png");
+     background-size: cover;
+     min-height: 1080px;
+     background-position: bottom;
+     background-repeat: no-repeat;
+     background-attachment: initial;
+     position: relative;
+     text-align: center;
+ }
  .header-text3 {
      position: relative;
      color: #5d5955;
@@ -115,20 +96,29 @@ body {
      font-style: normal;
      font-size: 6em;
      top: 10%;
-     right: 80%;
-     left: 3%;
-     
  }
 
 
+   .body-text3 {
+       position: absolute;
+       font-family: "Lexend", sans-serif;
+       font-weight: normal;
+       font-style: normal;
+       font-size: 1em;
+       top: 30%;
+       right: 7%;
+       left: 63%;
+   }
+
+/*image on section 3 */
 .image1 {
     position: absolute;
     max-width: 100%;
     height: auto;
     top: 25%;
-    right: 25%;
+    right: 40%;
 }
-
+/*resources page */
 .resources {
     background-image: url("images/8.png");
     background-size: cover;
@@ -140,7 +130,7 @@ body {
     text-align: center;
 }
 
- .header-text4 {
+ .header-text-resources {
      position: relative;
      color: #5d5955;
      font-family: "Lexend", sans-serif;
@@ -148,21 +138,18 @@ body {
      font-style: normal;
      font-size: 6em;
      top: 10%;
-     right: 30%;
-     left: 20%;
  }
 
- .body-text4 {
-     position: absolute;
-     font-family: "Lexend", sans-serif;
-     font-weight: normal;
-     font-style: normal;
-     font-size: 2em;
-     top: 25%;
-     right: 26%;
-     margin-left: 35%;
+ .body-text-resources {
+    position: absolute;
+        font-family: "Lexend", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        top: 25%;
+        margin-left: 25%;
  }
-
+/* faq section */
 .faq {
     background-image: url("images/6.png");
     background-size: cover;
@@ -174,7 +161,7 @@ body {
     text-align: center;
 }
 
- .header-text5 {
+ .header-text-faq {
      position: relative;
      color: #5d5955;
      font-family: "Lexend", sans-serif;
@@ -186,7 +173,7 @@ body {
      left: 20%;
  }
 
- .body-text5 {
+ .body-text-faq {
      position: absolute;
      font-family: "Lexend", sans-serif;
      font-weight: normal;
@@ -196,16 +183,168 @@ body {
      right: 26%;
      margin-left: 35%;
  }
-/*
+/* quiz page */
+ #quiz-container {
+     width: 1000px;
+     margin: 50px auto;
+     text-align: center;
+     font-family: "Lexend", sans-serif;
+     font-size: 2.4em;
+     color: #5d5955;
+     position: absolute;
+     top: 20%;
+     bottom: 50%;
+     left: 25%;
+ }
+
+ .option {
+     margin: 10px;
+     padding: 20px 30px;
+     background-color: #d8499c;
+     color: whitesmoke;
+     font-size: 0.5em;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ #next-button {
+     margin-top: 20px;
+     padding: 20px 30px;
+     background-color: #008383;
+     color: white;
+     font-size: 0.5em;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+
+.quiz-bg {
+    background-image: url("images/7.png");
+        background-size: cover;
+        min-height: 1080px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: cover;
+        position: relative;
+        text-align: center;
+}
+/* section 4 on index.html */
 .section4 {
-    background-image: url("images/4.png");
-}
+        background-image: url("images/4.png");
+        background-size: cover;
+        min-height: 1080px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        position: relative;
+        text-align: center;
+        top: 1000px;
+    }
+
+         .header-text4 {
+             position: relative;
+             color: #5d5955;
+             font-family: "Lexend", sans-serif;
+             font-weight: bold;
+             font-style: normal;
+             font-size: 6em;
+             top: 10%;
+         }
+    
+         .body-text4 {
+             position: absolute;
+             font-family: "Lexend", sans-serif;
+             font-weight: normal;
+             font-style: normal;
+             font-size: 1.5em;
+             top: 25%;
+             margin-left: 45%;
+             margin-right: 10%;
+         }
+
+    .twitter1 { 
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        top: 15%;
+        right: 60%;
+    }
+    
+    .video1 {
+        position: absolute;
+        max-width: 50%;
+        height: auto;
+        top: 2%;
+        right: 69%;
+        size-adjust: 60%;
+    }
+
+
+    .video2 {
+        position: absolute;
+        max-width: 50%;
+        height: auto;
+        top: 43%;
+        right: 75%;
+        height: 20%;
+        width: 20%;
+    }
+
+        .twitter2 {
+            position: absolute;
+            max-width: 100%;
+            height: auto;
+            top: 60%;
+            right: 60%;
+        }
+    
+        .video3 {
+            position: absolute;
+            max-width: 50%;
+            height: auto;
+            top: 50%;
+            right: 73%;
+            size-adjust: 60%;
+        }
+
+/* section 5 on index.html */
 .section5 {
-    background-image: url("images/5.png");
+    background-image: url("images/3.png");
+    background-size: cover;
+    min-height: 1080px;
+    min-width: 1380px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+    top: 1000px;
 }
-.section6 {
-    background-image: url("images/6.png");
-}
+
+                 .header-text5 {
+                     position: relative;
+                     color: #5d5955;
+                     font-family: "Lexend", sans-serif;
+                     font-weight: bold;
+                     font-style: normal;
+                     font-size: 6em;
+                     top: 10%;
+
+                 }
+        
+                 .body-text5 {
+                     position: absolute;
+                     font-family: "Lexend", sans-serif;
+                     font-weight: normal;
+                     font-style: normal;
+                     font-size: 1.5em;
+                    margin-left: 20%;
+                    margin-right: 20%;
+                 }
+
+
 
 
 
