@@ -1,0 +1,367 @@
+body {
+    color: #5d5955;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal; 
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.section1 {
+    background-image: url("images/1.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+ .header-text1 {
+     position: relative;
+     color: #5d5955;
+     font-family: "Lexend", sans-serif;
+     font-weight: bold;
+     font-style: normal;
+     font-size: 6em;
+     top: 100px;
+     left: 150px;
+ }
+
+ .body-text1 {
+     position: relative;
+     font-family: "Lexend", sans-serif;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 2em;
+     top: 130px;
+     right: 130px;
+     margin-left: 30%;
+ }
+.section2 {
+    background-image: url("images/2.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+ .header-text2 {
+     position: relative;
+     color: #5d5955;
+     font-family: "Lexend", sans-serif;
+     font-weight: bold;
+     font-style: normal;
+     font-size: 6em;
+     top: 100px;
+     left: 150px;
+ }
+
+ .body-text2 {
+     position: relative;
+     font-family: "Lexend", sans-serif;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 2em;
+     top: 130px;
+     right: 130px;
+     margin-left: 30%;
+ }
+
+ .header-text3 {
+     position: relative;
+     color: #5d5955;
+     font-family: "Lexend", sans-serif;
+     font-weight: bold;
+     font-style: normal;
+     font-size: 6em;
+     top: 10%;
+     right: 30%;
+     left: 20%;
+ }
+
+  .body-text2 {
+      position: absolute;
+      font-family: "Lexend", sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 2em;
+      top: 25%;
+      right: 26%;
+      margin-left: 35%;
+  }
+
+.section3 {
+    background-image: url("images/3.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+
+ .header-text3 {
+     position: relative;
+     color: #5d5955;
+     font-family: "Lexend", sans-serif;
+     font-weight: bold;
+     font-style: normal;
+     font-size: 6em;
+     top: 10%;
+     right: 80%;
+     left: 3%;
+     
+ }
+
+
+.image1 {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 25%;
+    right: 25%;
+}
+
+.resources {
+    background-image: url("images/8.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+
+ .header-text4 {
+     position: relative;
+     color: #5d5955;
+     font-family: "Lexend", sans-serif;
+     font-weight: bold;
+     font-style: normal;
+     font-size: 6em;
+     top: 10%;
+     right: 30%;
+     left: 20%;
+ }
+
+ .body-text4 {
+     position: absolute;
+     font-family: "Lexend", sans-serif;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 2em;
+     top: 25%;
+     right: 26%;
+     margin-left: 35%;
+ }
+
+.faq {
+    background-image: url("images/6.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+
+ .header-text5 {
+     position: relative;
+     color: #5d5955;
+     font-family: "Lexend", sans-serif;
+     font-weight: bold;
+     font-style: normal;
+     font-size: 6em;
+     top: 10%;
+     right: 30%;
+     left: 20%;
+ }
+
+ .body-text5 {
+     position: absolute;
+     font-family: "Lexend", sans-serif;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 2em;
+     top: 25%;
+     right: 26%;
+     margin-left: 35%;
+ }
+/*
+.section4 {
+    background-image: url("images/4.png");
+}
+.section5 {
+    background-image: url("images/5.png");
+}
+.section6 {
+    background-image: url("images/6.png");
+}
+
+
+
+
+/* Heading 2 style */
+h2 {
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+    color: #60644F;
+}
+
+/*Heading 3 style */
+h3 {
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 2em;
+
+}
+
+/* heading 4 style */
+h4 {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+
+}
+
+/* paragrah style */
+p {
+    color: #5d5955;
+    font-size: large;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 1.6;
+    margin-bottom: 0;
+    margin-top: 0%;
+}
+
+/* list styling (menu at top) */
+ul {
+    color: #5d5955;
+    font-size: large;
+    text-align: left;
+    justify-content: center;
+    list-style-position: inside;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0%;
+}
+
+/* ---- Colour of hyperlinks ----- */
+
+a {
+    color: #60644F
+}
+
+/* hover colour for hyperlinks */
+a:hover {
+    color: #9c4fc9;
+}
+
+/*This is for the table for week two & five lab Task. hover effect and some styling */
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    color: black;
+}
+
+th {
+    background-color: #035e7b;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/*navigation menu */
+
+nav ul {
+    list-style-type: none;
+    /* Removes the bullet points */
+    padding: 0;
+    margin-left: 25%;
+    margin-top: 1%;
+    justify-content: center;
+    display: flex;
+    /* Makes the list items appear horizontally */
+}
+
+nav li {
+    margin-right: 1%;
+    /* Adds some spacing between menu items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #035e7b;
+    display: inline-block;
+    font-size: larger;
+    font-weight: 300;
+}
+
+nav a:hover {
+    color: #002e2c;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+    /* Changes color to blue when hovered over */
+}
+
+/* here is the styling for the videos in week 8,  */
+
+#saferinternet {
+    color: #60644F;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 5em;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#saferinternet:hover {
+    color: #9c4fc9;
+
+}
+
+/* Hide the menu by default otherwise it duplicates */
+#nav-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
