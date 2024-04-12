@@ -1,3 +1,20 @@
+// to get gifs to come in one by one
+const gifElements = document.querySelectorAll('.gif-common'); // Get all GIF elements
+
+function displayGifSequentially() {
+    console.log("displayGifSequentially called"); // Did it get called?
+    gifElements.forEach((gif, index) => {
+        console.log("Iterating GIF:", index); // Are the GIFs found?
+setTimeout(() => { 
+    gif.style.opacity = 1;  // Reveal the GIF
+}, index * 1000); 
+
+    });
+}
+
+// Call the function when the page has finished loading
+window.onload = displayGifSequentially; 
+
 const quizData = [
     {
         question: "What percentage of 16-24 years olds use social media for news?",
@@ -37,7 +54,7 @@ const quizData = [
 
      {
         question: "You see a meme with a funny picture that makes a celebrity look really silly. What should you do before sharing it?",
-        options: ["Think about whether it's meant to be taken seriously or as a joke.", "Make sure the meme doesn't use any hurtful language.", "Check if anyone has already debunked it as a fake.", "All of the above."],
+        options: ["See if you can find the author of the meme and check if they are reputable.", "Refrain from sharing hurtful content.", "Check if anyone has already debunked it as a fake.", "All of the above."],
         answer: "All of the above."
     },
 
@@ -49,45 +66,75 @@ let score = 0;
 const questionEl = document.getElementById("question");
 const optionsEl = document.querySelectorAll(".option");
 const nextBtn = document.getElementById("next-button");
+const restartButton = document.getElementById('restart-button');
 const resultsEl = document.getElementById("results");
 
 loadQuestion();
 
 function loadQuestion() {
-    deselectAnswers(); // Reset previous selection
+    deselectAnswers(); 
 
     const currentQuestion = quizData[questionIndex];
     questionEl.innerText = currentQuestion.question;
 
-    for (let i = 0; i < optionsEl.length; i++) {
-        optionsEl[i].innerText = currentQuestion.options[i];
+    // Dynamically adjust number of options
+    const optionsContainer = document.getElementById('choices');
+    optionsContainer.innerHTML = ''; // Clear existing buttons
+
+    for (let i = 0; i < currentQuestion.options.length; i++) {
+        const optionButton = document.createElement('button'); 
+        optionButton.classList.add('option');
+        optionButton.innerText = currentQuestion.options[i];
+        optionsContainer.appendChild(optionButton); 
+    }
+
+    // Reattach event listeners since we are regenerating the buttons
+    optionsContainer.querySelectorAll('.option').forEach(option => {
+        option.addEventListener('click', () => checkAnswer(option))
+    });
 }
-}
+    deselectAnswers(); 
 
 function deselectAnswers() {
     optionsEl.forEach(option => option.classList.remove('selected'));
 }
 
 function checkAnswer(selectedOption) {
+    deselectAnswers(); // Reset styles before applying new ones
+
+    selectedOption.classList.add('selected'); // Mark as selected
+
     if (selectedOption.innerText === quizData[questionIndex].answer) {
         score++;
-        selectedOption.classList.add('correct');
+        selectedOption.classList.add('correct'); 
     } else {
-        selectedOption.classList.add('incorrect');
+        selectedOption.classList.add('incorrect'); // Add for wrong answers
     }
-    nextBtn.disabled = false; // Enable next button after answering
+    }
+     document.querySelectorAll('.option').forEach(option => option.classList.remove('selected'));
+  function deselectAnswers() {
+    nextBtn.disabled = false; // Enable next button
 }
+
 
 nextBtn.addEventListener('click', () => {
     questionIndex++;
     if (questionIndex < quizData.length) {
         loadQuestion();
-        nextBtn.disabled = true; // Disable during question display
+        nextBtn.disabled = true;
     } else {
-        resultsEl.innerText = `Quiz Over! Your score is ${score}/${quizData.length}`;
+        resultsEl.innerText = `Well done! Your score is ${score}/${quizData.length}`;
+        restartButton.style.display = 'block'; // Show restart button
     }
 });
 
-optionsEl.forEach(option => option.addEventListener('click', () => {
-    checkAnswer(option);
-}));
+restartButton.addEventListener('click', restartQuiz);
+
+function restartQuiz() {
+    questionIndex = 0;
+    score = 0;
+    resultsEl.innerText = ""; 
+    restartButton.style.display = 'none';
+    loadQuestion(); 
+}
+
