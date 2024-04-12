@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="/images/favicon.ico">
-    <!---This is the list for the navigation menu at the top of the page styling is in mycss and myjava-->
-    <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="quiz.html">Quiz</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="resources.html">Resources</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="/images/favicon.ico">
+  <!---This is the list for the navigation menu at the top of the page styling is in mycss and myjava-->
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="resources.html">Resources</a></li>
+    </ul>
+  </nav>
 
-    <title>Misinformation on Social Media</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/my.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <title>Misinformation on Social Media</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/my.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
 
-  <body>
-    <div class="quiz-bg">
+<body>
+  <div class="quiz-bg"></div>
+  <div id="quiz-container">
+    <div id="question"></div>
+    <div id="choices">
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+    </div>
+    <button id="next-button">Next</button>
+
+    <div id="results"></div>
+    <button id="restart-button" style="display: none;">Try again.</button>
   </div>
-        <div id="quiz-container">
-        <div id="question"></div>
-        <div id="choices">
-            <button class="option"></button>
-            <button class="option"></button>
-            <button class="option"></button>
-            <button class="option"></button>
-        </div>
-        <button id="next-button">Next</button>
-
-        <div id="results"></div>
-        <button id="restart-button" style="display: none;">Try again.</button>
-    </div>
-    <script src="/myjava.js"></script>
-    </div>
-  </body>
+  <script src="/myjava.js"></script>
+</body>
 </html>

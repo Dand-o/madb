@@ -2,451 +2,15 @@ body {
     color: #5d5955;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal; 
+    font-weight: normal;
     font-style: normal;
     margin: 0;
     padding: 0;
     height: 100%;
 
 }
-/* Section one on index.html */
-.section1 {
-    background-image: url("images/1.png");
-    background-size: cover;
-    min-height: 1080px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    position: relative;
-    text-align: center;
-}
- .header-text1 {
-     position: relative;
-     color: #5d5955;
-     font-family: "Lexend", sans-serif;
-     font-weight: bold;
-     font-style: normal;
-     font-size: 5em;
-     top: 40px;
-     left: 150px;
-     margin-left: 30%;
-     margin-right: 20%;
- }
 
- .body-text1 {
-     position: relative;
-     font-family: "Lexend", sans-serif;
-     font-weight: normal;
-     font-style: normal;
-     font-size: 115%;
-     top: 50px;
-     left: 115px;
-     margin-left: 40%;
-     margin-right: 30%;
- }
-
-/* Section 2 on index.html */
-.section2 {
-    background-image: url("images/2.png");
-    background-size: cover;
-    min-height: 1080px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    position: relative;
-    text-align: center;
-}
- .header-text2 {
-     position: relative;
-     color: #5d5955;
-     font-family: "Lexend", sans-serif;
-     font-weight: bold;
-     font-style: normal;
-     font-size: 5em;
-     top: 100px;
-
- }
-
-  .body-text2 {
-      position: absolute;
-      font-family: "Lexend", sans-serif;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 115%;
-      top: 25%;
-      margin-left: 35%;
-      margin-right: 35%;
-  }
-/* Section 3 on index.html */
- .section3 {
-     background-image: url("images/3.png");
-     background-size: cover;
-     min-height: 1080px;
-     background-position: bottom;
-     background-repeat: no-repeat;
-     background-attachment: initial;
-     position: relative;
-     text-align: center;
- }
- .header-text3 {
-     position: relative;
-     color: #5d5955;
-     font-family: "Lexend", sans-serif;
-     font-weight: bold;
-     font-style: normal;
-     font-size: 5em;
-     top: 50px;
- }
-
-
-   .body-text3 {
-       position: absolute;
-       font-family: "Lexend", sans-serif;
-       font-weight: normal;
-       font-style: normal;
-       font-size: 115%;
-       top: 25%;
-       right: 7%;
-       left: 63%;
-   }
-
-/*image on section 3 */
-.image1 {
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    top: 25%;
-    right: 40%;
-}
-/*resources page */
-.resources {
-    background-image: url("images/8.png");
-    background-size: cover;
-    min-height: 1080px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    position: relative;
-}
-
- .header-text-resources {
-     position: relative;
-     color: #5d5955;
-     text-align: center;
-     font-family: "Lexend", sans-serif;
-     font-weight: bold;
-     font-style: normal;
-     font-size: 5em;
-     top: 25px;
- }
-
- .body-text-resources {
-    position: absolute;
-        font-family: "Lexend", sans-serif;
-        font-weight: normal;
-        font-style: normal;
-        font-size: 115%;
-        top: 15%;
-        margin-left: 31%;
-        margin-right: 10%;
- }
-/* faq section */
-.faq {
-    background-image: url("images/6.png");
-    background-size: cover;
-    min-height: 1080px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    position: relative;
-    text-align: center;
-}
-
- .header-text-faq {
-     position: relative;
-     color: #ecd6c0;
-     font-family: "Lexend", sans-serif;
-     font-weight: bold;
-     font-style: normal;
-     font-size: 5em;
-     top: 10px;
-     right: 0%;
- }
-
- .body-text-faq {
-     position: absolute;
-     font-family: "Lexend", sans-serif;
-     font-weight: normal;
-     font-style: normal;
-     font-size: 115%;
-     top: 13%;
-     right: 50%;
-     margin-left: 8%;
-     margin-right: 5%;
- }
-
-  .body-text-faq2 {
-      position: relative;
-      font-family: "Lexend", sans-serif;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 100%;
-      left: 895px;
-      bottom: 690px;
-  }
-
-  .learn-more-image {
-      position: absolute;
-      max-width: 100%;
-      height: auto;
-      top: 300px;
-      right: 100px;
-      width: 440px;
-  }
-/* quiz page */
- #quiz-container {
-     width: 1000px;
-     margin: 50px auto;
-     text-align: center;
-     font-family: "Lexend", sans-serif;
-     font-size: 2.4em;
-     color: #5d5955;
-     position: absolute;
-     top: 20%;
-     bottom: 50%;
-     left: 25%;
- }
-#choices {
-    display: flex;
-    flex-direction: column;
-    /* Stack options vertically */
-}
- .option {
-     margin: 10px;
-     padding: 20px 30px;
-     background-color: #d8499c;
-     color: whitesmoke;
-     font-size: 0.5em;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
- }
-
- .option.correct {
-     background-color: #7eff9c;
-     /*correct */
-     color: #000000;
- }
-
- .option.incorrect {
-     background-color: #be0413;
-     /* incorrect */
-     color: #ffffff;
- }
-
- #next-button {
-     margin-top: 20px;
-     margin-bottom: 20px;
-     padding: 20px 30px;
-     background-color: #008383;
-     color: white;
-     font-family: "Lexend", sans-serif;
-     font-size: 0.5em;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
- }
-
- #restart-button {
-    margin-top: 20px;
-    margin-left: 430px;
-        padding: 20px 30px;
-        background-color: #be0505;
-        color: white;
-        font-family: "Lexend", sans-serif;
-        font-size: 0.5em;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
- }
-
-.quiz-bg {
-    background-image: url("images/7.png");
-        background-size: cover;
-        min-height: 1080px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: cover;
-        position: relative;
-        text-align: center;
-}
-/* Examples section */
-.section4 {
-        background-image: url("images/4.png");
-        background-size: cover;
-        min-height: 1080px;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-attachment: initial;
-        position: relative;
-        text-align: center;
-        top: 1000px;
-    }
-
-         .header-text4 {
-             position: relative;
-             color: #5d5955;
-             font-family: "Lexend", sans-serif;
-             font-weight: bold;
-             font-style: normal;
-             font-size: 5em;
-             top: 40px;
-         }
-    
-         .body-text4 {
-             position: absolute;
-             font-family: "Lexend", sans-serif;
-             font-weight: normal;
-             font-style: normal;
-             font-size: 115%;
-             top: 15%;
-             margin-left: 45%;
-             margin-right: 10%;
-         }
-
-    .twitter1 { 
-        position: absolute;
-        max-width: 100%;
-        height: auto;
-        top: 15%;
-        right: 60%;
-    }
-    
-        .video1 {
-            position: absolute;
-            max-width: 50%;
-            height: auto;
-            top: 2%;
-            right: 69%;
-            size-adjust: 60%;
-        }
-
-
-            .video2 {
-                position: absolute;
-                max-width: 50%;
-                height: auto;
-                top: 32%;
-                right: 75%;
-                width: 20%;
-            }
-
-                .twitter2 {
-                    position: absolute;
-                    max-width: 100%;
-                    height: auto;
-                    top: 60%;
-                    right: 60%;
-                }
-    
-                    .video3 {
-                        position: absolute;
-                        max-width: 50%;
-                        height: auto;
-                        top: 50%;
-                        right: 73%;
-                    }
-
-                        .twitter3 {
-                            position: absolute;
-                            max-width: 100%;
-                            height: auto;
-                            top: 50%;
-                            right: 15%;
-                        }
-
-                            .video4 {
-                                position: absolute;
-                                max-width: 50%;
-                                height: auto;
-                                top: 35%;
-                                right: 33%;
-
-                            }
-                                .video5 {
-                                    position: absolute;
-                                    max-width: 50%;
-                                    height: auto;
-                                    top: 35%;
-                                    right: 10%;
-  
-                                }        .video6 {
-                                            position: absolute;
-                                            max-width: 50%;
-                                            height: auto;
-                                            top: 45%;
-                                            right: 33%;
-
-                                        }        .video7 {
-                                                    position: absolute;
-                                                    max-width: 50%;
-                                                    height: auto;
-                                                    top: 55%;
-                                                    right: 29%;
-
-                                                }
-
-/* Recap Section*/
-.section5 {
-    background-image: url("images/3.png");
-    background-size: cover;
-    min-height: 1080px;
-    min-width: 1380px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    position: relative;
-    text-align: center;
-    top: 1000px;
-}
-
-                 .header-text5 {
-                     position: relative;
-                     color: #5d5955;
-                     font-family: "Lexend", sans-serif;
-                     font-weight: bold;
-                     font-style: normal;
-                     font-size: 5em;
-                     top: 30px;
-
-                 }
-        
-                 .body-text5 {
-                     position: absolute;
-                     font-family: "Lexend", sans-serif;
-                     font-weight: normal;
-                     font-style: normal;
-                     font-size: 115%;
-                    margin-left: 20%;
-                    margin-right: 20%;
-                    top: 20%;
-                 }
-
-                 .quiz-button {
-                     position: absolute;
-                     margin-top: 10%;
-                     cursor: pointer;
-                     width: 300px;
-                     top: 45%;
-                     right: 42%;
-                 }
-
-
-
-
-
-
-/* Heading 2 style */
+/* Heading 2 Style */
 h2 {
     text-align: left;
     margin-top: 0px;
@@ -459,7 +23,7 @@ h2 {
     color: #60644F;
 }
 
-/*Heading 3 style */
+/* Heading 3 Style */
 h3 {
     text-align: left;
     left: 10px;
@@ -469,7 +33,7 @@ h3 {
 
 }
 
-/* heading 4 style */
+/* Heading 4 Style */
 h4 {
     text-align: left;
     margin-top: 20px;
@@ -478,10 +42,9 @@ h4 {
     margin-right: 25%;
     font-family: "Lexend", sans-serif;
     font-size: 20px;
-
 }
 
-/* paragrah style */
+/* Paragraph style */
 p {
     color: #5d5955;
     font-size: large;
@@ -493,7 +56,7 @@ p {
     margin-top: 0%;
 }
 
-/* list styling (menu at top) */
+/* List styling (top-level menu) */
 ul {
     color: #5d5955;
     font-size: 115%;
@@ -507,23 +70,19 @@ ul {
     margin-bottom: 10px;
 }
 
-/* ---- Colour of hyperlinks ----- */
-
+/* Hyperlinks */
 a {
     color: #50007e
 }
 
-/* hover colour for hyperlinks */
 a:hover {
     color: #3e4fe9;
 }
 
-
-/*navigation menu */
+/* Navigation */
 
 nav ul {
     list-style-type: none;
-    /* Removes the bullet points */
     padding: 0;
     margin-left: 30%;
     margin-top: 1%;
@@ -533,7 +92,6 @@ nav ul {
 
 nav li {
     margin-right: 10%;
-    /* spacing between menu items*/
 }
 
 nav a {
@@ -550,10 +108,448 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* Hide the menu by default otherwise it duplicates */
 #nav-menu {
     display: none;
     list-style-type: none;
     padding: 0;
+}
+
+/* Index page */
+/* Section one on index.html */
+.section1 {
+    background-image: url("images/1.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+
+.header-text1 {
+    position: relative;
+    color: #5d5955;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5em;
+    top: 40px;
+    left: 150px;
+    margin-left: 30%;
+    margin-right: 20%;
+}
+
+.body-text1 {
+    position: relative;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 115%;
+    top: 50px;
+    left: 115px;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+/* Section 2 on index.html */
+.section2 {
+    background-image: url("images/2.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+
+.header-text2 {
+    position: relative;
+    color: #5d5955;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5em;
+    top: 100px;
+
+}
+
+.body-text2 {
+    position: absolute;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 115%;
+    top: 25%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+/* Section 3 on index.html */
+.section3 {
+    background-image: url("images/3.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+
+.header-text3 {
+    position: relative;
+    color: #5d5955;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5em;
+    top: 50px;
+}
+
+
+.body-text3 {
+    position: absolute;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 115%;
+    top: 25%;
+    right: 7%;
+    left: 63%;
+}
+
+/* Section 3 Image */
+.image1 {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 25%;
+    right: 40%;
+}
+
+.section4 {
+    background-image: url("images/4.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+    top: 1000px;
+}
+
+.header-text4 {
+    position: relative;
+    color: #5d5955;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5em;
+    top: 40px;
+}
+
+.body-text4 {
+    position: absolute;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 115%;
+    top: 15%;
+    margin-left: 45%;
+    margin-right: 10%;
+}
+
+.twitter1 {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 15%;
+    right: 60%;
+}
+
+.video1 {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    top: 2%;
+    right: 69%;
+    size-adjust: 60%;
+}
+
+
+.video2 {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    top: 32%;
+    right: 75%;
+    width: 20%;
+}
+
+.twitter2 {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 60%;
+    right: 60%;
+}
+
+.video3 {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    top: 50%;
+    right: 73%;
+}
+
+.twitter3 {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 50%;
+    right: 15%;
+}
+
+.video4 {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    top: 35%;
+    right: 33%;
+
+}
+.video5 {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    top: 35%;
+    right: 10%;
+}
+
+.video6 {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    top: 45%;
+    right: 33%;
+}
+
+.video7 {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    top: 55%;
+    right: 29%;
+}
+
+/* Recap Section*/
+.section5 {
+    background-image: url("images/3.png");
+    background-size: cover;
+    min-height: 1080px;
+    min-width: 1380px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+    top: 1000px;
+}
+
+.header-text5 {
+    position: relative;
+    color: #5d5955;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5em;
+    top: 30px;
+
+}
+
+.body-text5 {
+    position: absolute;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 115%;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 20%;
+}
+
+.quiz-button {
+    position: absolute;
+    margin-top: 10%;
+    cursor: pointer;
+    width: 300px;
+    top: 45%;
+    right: 42%;
+}
+
+/* Resources page */
+.resources {
+    background-image: url("images/8.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+}
+
+.header-text-resources {
+    position: relative;
+    color: #5d5955;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5em;
+    top: 25px;
+}
+
+.body-text-resources {
+    position: absolute;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 115%;
+    top: 15%;
+    margin-left: 31%;
+    margin-right: 10%;
+}
+
+/* FAQ page */
+.faq {
+    background-image: url("images/6.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    position: relative;
+    text-align: center;
+}
+
+.header-text-faq {
+    position: relative;
+    color: #ecd6c0;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 5em;
+    top: 10px;
+    right: 0%;
+}
+
+.body-text-faq {
+    position: absolute;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 115%;
+    top: 13%;
+    right: 50%;
+    margin-left: 8%;
+    margin-right: 5%;
+}
+
+.body-text-faq2 {
+    position: relative;
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    left: 895px;
+    bottom: 690px;
+}
+
+.learn-more-image {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    top: 300px;
+    right: 100px;
+    width: 440px;
+}
+
+/* Quiz page */
+#quiz-container {
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-size: 2.4em;
+    color: #5d5955;
+    position: absolute;
+    top: 20%;
+    bottom: 50%;
+    left: 25%;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+}
+.option {
+    margin: 10px;
+    padding: 20px 30px;
+    background-color: #d8499c;
+    color: whitesmoke;
+    font-size: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option.correct {
+    background-color: #7eff9c;
+    color: #000000;
+}
+
+.option.incorrect {
+    background-color: #be0413;
+    color: #ffffff;
+}
+
+#next-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    background-color: #008383;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-button {
+margin-top: 20px;
+margin-left: 430px;
+    padding: 20px 30px;
+    background-color: #be0505;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quiz-bg {
+    background-image: url("images/7.png");
+    background-size: cover;
+    min-height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    position: relative;
+    text-align: center;
 }
 
