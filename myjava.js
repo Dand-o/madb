@@ -52,10 +52,16 @@ const quizData = [
         answer: "They have a funny username and weird profile picture."
     },
 
-     {
-        question: "You see a meme with a funny picture that makes a celebrity look really silly. What should you do before sharing it?",
-        options: ["See if you can find the author of the meme and check if they are reputable.", "Refrain from sharing hurtful content.", "Check if anyone has already debunked it as a fake.", "All of the above."],
-        answer: "All of the above."
+         {
+        question: "What should you do to stop the spread of misinformation?",
+        options: ["Fact-Check", "Think Critically", "Report", "All of the Above"],
+        answer: "All of the Above"
+    },
+
+         {
+        question: "A friend keeps sharing posts from a website that you know is unreliable. What's the best way to help them?",
+        options: ["Call them out and start an argument. You know you are right!", "Tell everyone that your friend is a bad person.", "Suggest checking out fact-checking websites and be patient with them.", "Phone the police."],
+        answer: "Suggest checking out fact-checking websites and be patient with them."
     },
 
 ];
