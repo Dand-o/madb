@@ -148,6 +148,7 @@ body {
         font-size: 115%;
         top: 15%;
         margin-left: 31%;
+        margin-right: 10%;
  }
 /* faq section */
 .faq {
@@ -191,7 +192,16 @@ body {
       font-style: normal;
       font-size: 100%;
       left: 895px;
-      bottom: 575px;
+      bottom: 690px;
+  }
+
+  .learn-more-image {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      top: 300px;
+      right: 100px;
+      width: 440px;
   }
 /* quiz page */
  #quiz-container {
