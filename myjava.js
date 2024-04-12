@@ -1,19 +1,3 @@
-// to get gifs to come in one by one
-const gifElements = document.querySelectorAll('.gif-common'); // Get all GIF elements
-
-function displayGifSequentially() {
-    console.log("displayGifSequentially called"); // Did it get called?
-    gifElements.forEach((gif, index) => {
-        console.log("Iterating GIF:", index); // Are the GIFs found?
-setTimeout(() => { 
-    gif.style.opacity = 1;  // Reveal the GIF
-}, index * 1000); 
-
-    });
-}
-
-// Call the function when the page has finished loading
-window.onload = displayGifSequentially; 
 
 const quizData = [
     {
@@ -75,8 +59,6 @@ const nextBtn = document.getElementById("next-button");
 const restartButton = document.getElementById('restart-button');
 const resultsEl = document.getElementById("results");
 
-loadQuestion();
-
 function loadQuestion() {
     deselectAnswers(); 
 
@@ -99,7 +81,6 @@ function loadQuestion() {
         option.addEventListener('click', () => checkAnswer(option))
     });
 }
-    deselectAnswers(); 
 
 function deselectAnswers() {
     optionsEl.forEach(option => option.classList.remove('selected'));
@@ -122,20 +103,6 @@ function checkAnswer(selectedOption) {
     nextBtn.disabled = false; // Enable next button
 }
 
-
-nextBtn.addEventListener('click', () => {
-    questionIndex++;
-    if (questionIndex < quizData.length) {
-        loadQuestion();
-        nextBtn.disabled = true;
-    } else {
-        resultsEl.innerText = `Well done! Your score is ${score}/${quizData.length}`;
-        restartButton.style.display = 'block'; // Show restart button
-    }
-});
-
-restartButton.addEventListener('click', restartQuiz);
-
 function restartQuiz() {
     questionIndex = 0;
     score = 0;
@@ -143,4 +110,24 @@ function restartQuiz() {
     restartButton.style.display = 'none';
     loadQuestion(); 
 }
+
+if (nextBtn) {
+    loadQuestion();
+    deselectAnswers();
+
+    nextBtn.addEventListener('click', () => {
+        questionIndex++;
+        if (questionIndex < quizData.length) {
+            loadQuestion();
+            nextBtn.disabled = true;
+        } else {
+            resultsEl.innerText = `Well done! Your score is ${score}/${quizData.length}`;
+            restartButton.style.display = 'block'; // Show restart button
+        }
+    });
+
+    restartButton.addEventListener('click', restartQuiz);
+}
+
+
 
